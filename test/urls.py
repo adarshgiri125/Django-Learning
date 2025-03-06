@@ -23,6 +23,7 @@ urlpatterns = [
     path('', home, name = "home"),
     path('admin/', admin.site.urls),
     path('hurrah-page',hurraa, name = 'hurrah'),
-    path('api/',include('api.urls'))
+    path('api/',include('api.urls')),
+    path('db/', include('db.urls')),
   
 ]
